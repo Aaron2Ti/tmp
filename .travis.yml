@@ -1,0 +1,14 @@
+---
+sudo: required
+services:
+  - docker
+
+git:
+   depth: 5
+
+language: minimal
+
+matrix:
+  include:
+    - script:
+      - python --version
